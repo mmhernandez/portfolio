@@ -8,3 +8,8 @@
 .nav-link{
     color:#008b8b;
 }
+
+/* override nav bar text hover color */
+.nav-link:focus,.nav-link:hover{
+    color:#16b7ba
+}
