@@ -1,5 +1,4 @@
 
 /* override nav bar button and text color */
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
-    color:#fff;
     background-color:#008b8b
