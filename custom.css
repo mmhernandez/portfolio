@@ -1,6 +1,7 @@
 /* add background color to nav bar*/
 .nav{
-    background:#f8f8f8
+    background:#f8f8f8;
+	padding: 15px
 }
 
 /* override nav bar button color to darkcyan */
