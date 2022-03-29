@@ -1,3 +1,7 @@
+/* add background color to nav bar*/
+.nav{
+    background-color:#f8f8f8
+}
 
 /* override nav bar button color to darkcyan */
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
