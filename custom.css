@@ -6,10 +6,10 @@
 
 /* override nav bar text color */
 .nav-link{
-    color:#008b8b;
+    color:#495057;
 }
 
 /* override nav bar text hover color */
 .nav-link:focus,.nav-link:hover{
-    color:#16b7ba
+    color:#008b8b
 }
