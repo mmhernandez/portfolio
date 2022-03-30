@@ -1,13 +1,14 @@
 /* add background color to nav bar*/
 .nav{
-    background:#f8f8f8;
+    background:#008b8b;
 	padding: 15px;
 	background-size: cover
 }
 
-/* override nav bar button color to darkcyan */
+/* override nav bar button color */
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
-    background-color:#008b8b
+    background-color:#f8f8f8;
+	background-size: cover
 }
 
 /* override nav bar text color to dark grey */
@@ -15,7 +16,7 @@
     color:#495057
 }
 
-/* override nav bar text hover color to darkcyan */
+/* override nav bar text hover color */
 .nav-link:focus,.nav-link:hover{
-    color:#008b8b
+    color:#f8f8f8
 }
