@@ -8,15 +8,15 @@
 /* override nav bar button color */
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
     background-color:#f8f8f8;
-	background-size: cover
+	color:#212529
 }
 
-/* override nav bar text color to dark grey */
+/* override nav bar text color  #495057 */
 .nav-link{
-    color:#495057
+    color:#f8f8f8
 }
 
 /* override nav bar text hover color */
 .nav-link:focus,.nav-link:hover{
-    color:#f8f8f8
+    color:#c3b299
 }
