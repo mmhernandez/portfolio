@@ -7,7 +7,7 @@
 
 /* override nav bar button color */
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
-    background-color:#f8f8f8;
+    background-color:#ffffff;
 	color:#212529
 }
 
