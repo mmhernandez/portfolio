@@ -1,0 +1,23 @@
+/*
+	Style baseline from Photon by HTML5 UP (html5up.net | @ajlkn | html5up.net/license)
+*/
+
+/* Header */
+	body.is-preload #header .inner {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+		body.is-preload #header .inner .actions {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
+
+	body.is-preload #header:after {
+		opacity: 0;
+	}
