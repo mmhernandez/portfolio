@@ -196,15 +196,13 @@ input, select, textarea {
 	.color-style5 { color: #31727c; }
 	.color-style6 { color: #1d5966; }
 	.color-style7 { color: #003545; }
-	/* .color-style1 { color: #c3e895; }
-	.color-style2 { color: #8addaa; }
-	.color-style3 { color: #6bd4c8; }
-	.color-style4 { color: #57aed3; }
-	.color-style5 { color: #4a87d3; }
-	.color-style6 { color: #6b88e6; } */
 	.w-5 { width: 5%; }
 	.fw-bold { font-weight: bold; }
 	.border { border: #31727c 1px dotted; }
+	.center {
+		display: flex;
+		justify-content: center;
+	}
 
 /* Container */
 	.container {
@@ -403,7 +401,6 @@ input, select, textarea {
 					.row.gtr-200 > * {padding: 0 0 0 4em;}
 					.row.gtr-200.gtr-uniform {margin-top: -4em;}
 						.row.gtr-200.gtr-uniform > * {padding-top: 4em;}
-
 		}
 
 		@media screen and (max-width: 1140px) {
@@ -497,14 +494,12 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
 			.row {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
-
 				.row > * { box-sizing: border-box; }
 				.row.gtr-uniform > * > :last-child { margin-bottom: 0; }
 				.row.aln-left { justify-content: flex-start; }
@@ -1081,18 +1076,12 @@ input, select, textarea {
 		.icon:before { line-height: inherit; }
 		.icon.solid:before { font-weight: 900 !important; }
 		.icon.brands:before { font-family: 'Font Awesome 5 Brands'; }
-		.icon.style1:before { color: #915655; }   /* #ED6363 */
+		.icon.style1:before { color: #915655; }
 		.icon.style2:before { color: #675E5C; }
 		.icon.style3:before { color: #2C595B; }
 		.icon.style4:before { color: #1D4D54; }
 		.icon.style5:before { color: #0E414D; }
 		.icon.style6:before { color: #003545; }
-		/* .icon.style1:before { color: #c3e895; }
-		.icon.style2:before { color: #8addaa; }
-		.icon.style3:before { color: #6bd4c8; }
-		.icon.style4:before { color: #57aed3; }
-		.icon.style5:before { color: #4a87d3; }
-		.icon.style6:before { color: #6b88e6; } */
 		.icon.major {
 			text-decoration: none;
 			color: #555;
@@ -1145,7 +1134,6 @@ input, select, textarea {
 		border-radius: 4px;
 		border: 0;
 		display: inline-block;
-		/* position: relative; */
 	}
 		.image img {
 			border-radius: 4px;
@@ -1492,9 +1480,8 @@ input, select, textarea {
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
-			background-attachment: fixed,							fixed;
+			background-attachment: fixed;
 			background-image: url("./images/blurry-gradient-md.svg");
-			/* background-image: url("images/overlay1.png"), url("../../images/header.jpg"); */
 			background-size: cover;
 		}
 			.main.style2 a { border-bottom-color: rgba(255, 255, 255, 0.5); }
@@ -1550,18 +1537,6 @@ input, select, textarea {
 			.main.style2 .icon.major { color: #ffffff; }
 
 /* Header */
-	/* #header {
-		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
-		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-		background-position: top left,						center center,					center center;
-		background-size:     auto,							cover,							cover;
-		overflow: hidden;
-		position: relative;
-		text-align: center;
-	} */
 	#header {
 		padding: 9em 0 9em 0 ;
 		background-color: #00454A;
@@ -1708,24 +1683,6 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-	/* body.is-preload #header:after { opacity: 1; }
-	#header2 {
-		padding: 1.5em 0 1.5em 0 ;
-		background-color: #4686a0;
-		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-		background-position: top left,						center center,					center center;
-		background-size:     auto,							cover,							cover;
-		overflow: hidden;
-		position: fixed;
-		top: 0;
-		text-align: center;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	} */
 	body.is-preload #header:after { opacity: 1; }
 	#header2 {
 		padding: 1.5em 0 1.5em 0 ;
@@ -1748,16 +1705,6 @@ input, select, textarea {
 			#header2 a:hover { color: #ffffff; }
 
 /* Footer */
-	/* #footer {
-		padding: 4em 0 3em 0 ;
-		background-color: #4686a0;
-		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
-		background-position: top left,						center center,					center center;
-		background-size:     auto,							cover,							cover;
-		text-align: center;
-	} */
 	#footer {
 		padding: 4em 0 3em 0 ;
 		background-color: #00454A;
