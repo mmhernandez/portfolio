@@ -17,103 +17,96 @@
 		</section>
 
 		<!-- Project Highlights -->
-			<section class="main style1 mt-2">
-				<div class="container">
-					<header class="major special">
-						<h2>Dead By Daylight Perks Roulette</h2>
-					</header>
+		<section class="main style1 mt-2">
+			<div class="container">
+				<header class="major special">
+					<h2>Dead By Daylight Perks Roulette</h2>
+				</header>
+				<p class="align-center mt-2">
+					<span class="color-style7">Python</span> | 
+					<span class="color-style6">Flask</span> | 
+					<span class="color-style5">MySQL</span> | 
+					<span class="color-style4">Javascript</span> | 
+					<span class="color-style4">API</span> | 
+					<span class="color-style3">Bootstrap</span> | 
+					<span class="color-style2">CSS</span> | 
+					<span class="color-style2">Jinja2</span> | 
+					<span class="color-style1">HTML</span>
+				</p>
+
+				<section>
+					<h5>I was commissioned to create this app for a group of gamers who needed a better way to view Dead By Daylight game perks, randomly generate perks for their preferred gameplay, and save any perk builds to a favorites list for future reference. I was able to do that, and more!</h5>
+					<ul class="actions special">
+						<li><a href="https://dbdroulette.com/" target="_blank" class="button">Visit Site</a></li>
+					</ul>
+					<div class="box alt">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-12"><span class="image fit"><img src="../images/dbd_perks_roulette_home.png" alt="Dead By Daylight Homepage" /></span></div>
+						</div>
+					</div>
+					<p class="mt-4">
+						I used a couple of different libraries and packages to achieve various goals for this app, including Cloudinary for image storage and retrieval, WTForms to include a reCAPTCHA check for user signups, the GoogleAPI for an alternate user login option, and Bcrypt for password hashing.
+					</p>
 					<p class="align-center mt-2">
-						<span class="color-style7">Python</span> | 
-						<span class="color-style6">Flask</span> | 
-						<span class="color-style5">MySQL</span> | 
-						<span class="color-style4">Javascript</span> | 
-						<span class="color-style4">API</span> | 
-						<span class="color-style3">Bootstrap</span> | 
-						<span class="color-style2">CSS</span> | 
-						<span class="color-style2">Jinja2</span> | 
-						<span class="color-style1">HTML</span>
+						<span class="color-style7">Cloudinary</span> | 
+						<span class="color-style6">WTForms</span> | 
+						<span class="color-style5">Requests</span> | 
+						<span class="color-style4">Python-Dotenv</span> | 
+						<span class="color-style3">Google API</span> | 
+						<span class="color-style2">OAuth</span> |  
+						<span class="color-style1">Bcrypt</span>
+					</p>
+					<div class="box alt">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6"><span class="image fit"><img src="../images/dbd_survivor_perks_list.png" alt="Dead By Daylight Perks List" /></span></div>
+							<div class="col-6"><span class="image fit"><img src="../images/dbd_survivor_perks_roulette.png" alt="Dead By Daylight Perks Roulette" /></span></div>
+						</div>
+					</div>
+
+					<h5>Project Details</h5>
+					<p>
+						<span class="image left">
+							<span class="icon solid style1 major fa-list"></span>
+						</span>
+						The Dead By Daylight Perks Roulette app offers many features, available to any user. This includes full perks lists with filter and search options, perks roulette which selects 4 perks at random for custom game play, and a modified roulette option with 6 randomly selected perks for the user to select their preferred 4 for game play. <br><br>
+						Users can sign-up to create a new account, where I implemented a reCAPTCHA check to avoid bots. Or, if preferred, users can login with Google. By importing the Google-oauth library, the app can authenticate users with their gmail credentials for both ease of use and additional security.
+					</p>
+					<div class="box alt">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6"><span class="image fit"><img src="../images/dbd_google_login.png" alt="Dead By Daylight Google Login" class="border"/></span></div>
+							<div class="col-6"><span class="image fit"><img src="../images/dbd_login.png" alt="Dead By Daylight Login Page" /></span></div>
+						</div>
+					</div>
+
+					<p>
+						<span class="image left">
+							<span class="icon solid style3 major fa-star"></span>
+						</span>
+						There are a few additional app features that are only available to logged in users. After logging in, users can view a <span class="fw-bold">Favorites</span> tab in the left navigation pane as well as new <span class="fw-bold">Add to Favorites</span> buttons on each of the roulette pages. From this Favorites section, users can view any favorites they've created and create custom builds to add to their favorites list. Because this favorites feature adds entries to a database, I decided to nest it behind a login (and also included logic to limit the number of favorites each user can create).<br><br>
+					</p>
+					<div class="box alt">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6"><span class="image fit"><img src="../images/dbd_survivor_favorites.png" alt="Dead By Daylight Survivor Favorites" /></span></div>
+							<div class="col-6"><span class="image fit"><img src="../images/dbd_custom_survivor_build.png" alt="Dead By Daylight Custom Build" /></span></div>
+						</div>
+					</div>
+					<p>
+						Speaking of special features - this app was also built with administration in mind. Each user has a user-level associated, which is defaulted to a <span class="fw-bold">user</span> level upon account creation. Any <span class="fw-bold">super admin</span> user has the ability to change user permissions, and can elevate users to <span class="fw-bold">admin</span> or <span>super admin</span> level. Admin and super admin users can create/edit/delete perks, but only super admin users can modify user permission levels.
 					</p>
 
-					<section>
-						<h5>I was commissioned to create this app for a group of gamers who needed a better way to view Dead By Daylight game perks, randomly generate perks for their preferred gameplay, and save any perk builds to a favorites list for future reference. I was able to do that, and more!</h5>
-						<ul class="actions special">
-							<li><a href="https://dbdroulette.com/" target="_blank" class="button">Visit Site</a></li>
-						</ul>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-12"><span class="image fit"><img src="../images/dbd_perks_roulette_home.png" alt="Dead By Daylight Homepage" /></span></div>
-							</div>
-						</div>
-						<p class="mt-4">
-							I used a couple of different libraries and packages to achieve various goals for this app, including Cloudinary for image storage and retrieval, WTForms to include a reCAPTCHA check for user signups, the GoogleAPI for an alternate user login option, and Bcrypt for password hashing.
-						</p>
-						<p class="align-center mt-2">
-							<span class="color-style7">Cloudinary</span> | 
-							<span class="color-style6">WTForms</span> | 
-							<span class="color-style5">Requests</span> | 
-							<span class="color-style4">Python-Dotenv</span> | 
-							<span class="color-style3">Google API</span> | 
-							<span class="color-style2">OAuth</span> |  
-							<span class="color-style1">Bcrypt</span>
-						</p>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-6"><span class="image fit"><img src="../images/dbd_survivor_perks_list.png" alt="Dead By Daylight Perks List" /></span></div>
-								<div class="col-6"><span class="image fit"><img src="../images/dbd_survivor_perks_roulette.png" alt="Dead By Daylight Perks Roulette" /></span></div>
-								<!-- <div class="col-4"><span class="image fit"><img src="../images/dbd_survivor_perks_roulette_options.png" alt="" /></span></div> -->
-							</div>
-						</div>
-
-						<h5>Project Details</h5>
-						<p>
-							<span class="image left">
-								<!-- <img src="../images/pic05.jpg" alt="" /> -->
-								<span class="icon solid style1 major fa-list"></span>
-							</span>
-							The Dead By Daylight Perks Roulette app offers many features, available to any user. This includes full perks lists with filter and search options, perks roulette which selects 4 perks at random for custom game play, and a modified roulette option with 6 randomly selected perks for the user to select their preferred 4 for game play. <br><br>
-							Users can sign-up to create a new account, where I implemented a reCAPTCHA check to avoid bots. Or, if preferred, users can login with Google. By importing the Google-oauth library, the app can authenticate users with their gmail credentials for both ease of use and additional security.
-						</p>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-6"><span class="image fit"><img src="../images/dbd_google_login.png" alt="Dead By Daylight Google Login" class="border"/></span></div>
-								<div class="col-6"><span class="image fit"><img src="../images/dbd_login.png" alt="Dead By Daylight Login Page" /></span></div>
-								<!-- <div class="col-4"><span class="image fit"><img src="../images/dbd_signup.png" alt="" /></span></div> -->
-							</div>
-						</div>
-
-						<!-- <h5>App Features</h5> -->
-						<p>
-							<span class="image left">
-								<span class="icon solid style3 major fa-star"></span>
-							</span>
-							There are a few additional app features that are only available to logged in users. After logging in, users can view a <span class="fw-bold">Favorites</span> tab in the left navigation pane as well as new <span class="fw-bold">Add to Favorites</span> buttons on each of the roulette pages. From this Favorites section, users can view any favorites they've created and create custom builds to add to their favorites list. Because this favorites feature adds entries to a database, I decided to nest it behind a login (and also included logic to limit the number of favorites each user can create).<br><br>
-						</p>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50">
-								<!-- <div class="col-12"><span class="image fit"><img src="../images/pic06.jpg" alt="" /></span></div> -->
-								<div class="col-6"><span class="image fit"><img src="../images/dbd_survivor_favorites.png" alt="Dead By Daylight Survivor Favorites" /></span></div>
-								<div class="col-6"><span class="image fit"><img src="../images/dbd_custom_survivor_build.png" alt="Dead By Daylight Custom Build" /></span></div>
-								<!-- <div class="col-4"><span class="image fit"><img src="../images/dbd_manage_perks.png" alt="" /></span></div> -->
-							</div>
-						</div>
-						<p>
-							Speaking of special features - this app was also built with administration in mind. Each user has a user-level associated, which is defaulted to a <span class="fw-bold">user</span> level upon account creation. Any <span class="fw-bold">super admin</span> user has the ability to change user permissions, and can elevate users to <span class="fw-bold">admin</span> or <span>super admin</span> level. Admin and super admin users can create/edit/delete perks, but only super admin users can modify user permission levels.
-						</p>
-
-						<h5>Application Deployment</h5>
-						<p>
-							<span class="image left">
-								<!-- <img src="../images/pic05.jpg" alt="" /> -->
-								<span class="icon brands style1 major2 fa-aws"></span>
-							</span>
-							This project was deployed to AWS in an Amazon EC2 instance. A domain was purchased from Amazon and connected to the EC2 instance using the Amazon Route53 service. An SSL certificate was also purchased; using the Load Balancer tool, traffic is routed to HTTPS and references the cert for a secure site experience for users.
-						</p>
-					</section>
-				</div>
-				<ul class="actions special mt-4">
-					<li><a href="https://dbdroulette.com/" target="_blank" class="button">Visit Site</a></li>
-				</ul>
-			</section>
+					<h5>Application Deployment</h5>
+					<p>
+						<span class="image left">
+							<span class="icon brands style1 major2 fa-aws"></span>
+						</span>
+						This project was deployed to AWS in an Amazon EC2 instance. A domain was purchased from Amazon and connected to the EC2 instance using the Amazon Route53 service. An SSL certificate was also purchased; using the Load Balancer tool, traffic is routed to HTTPS and references the cert for a secure site experience for users.
+					</p>
+				</section>
+			</div>
+			<ul class="actions special mt-4">
+				<li><a href="https://dbdroulette.com/" target="_blank" class="button">Visit Site</a></li>
+			</ul>
+		</section>
 
 		<!-- Footer -->
 		<section id="footer">
@@ -128,13 +121,13 @@
 		</section>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-			<script src="https://kit.fontawesome.com/d2584149db.js" crossorigin="anonymous"></script>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script src="https://kit.fontawesome.com/d2584149db.js" crossorigin="anonymous"></script>
 
 	</body>
 </html>
