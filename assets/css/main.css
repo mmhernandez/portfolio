@@ -204,7 +204,12 @@ input, select, textarea {
 		display: flex;
 		justify-content: center;
 	}
-	.list-none { list-style: none; }
+	.list-none { 
+		list-style: none; 
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.small { width: 3em;}
 
 /* Container */
 	.container {
